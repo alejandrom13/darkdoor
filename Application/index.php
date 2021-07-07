@@ -1,67 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>PHP Application</title>
-	<link href="css/site.css" rel="stylesheet">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive Landing Page Islands</title>
+</head>
 <body>
-<div class="main-container">
-        <div class="cloud-image">
-            <img src="img/successCloudNew.svg" alt="successCloudNew" />
+<!--========== HEADER ==========-->
+<header class="header">
+    <nav class="nav bd-container">
+        <a href="#" class="nav__logo"><img src="assets/img/logo.svg" alt=""></a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Precios</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Sobre Nosotros</a></li>
+                <li class="nav__item"><a href="#" class="nav__button">Acceder</a></li>
+
+            </ul>
         </div>
-        <div class="content">
-            <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20PHP%20website%20on%20Azure%20using%20Github%20Actions&hashtags=GithubActions%20%40Azure">
-                <img src="img/tweetThis.svg" alt="tweetThis" />
-            </a>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
         </div>
-            <div class="content-body">
-                <div class="success-text">Success!</div>
-                <div class="description line-1">
-				<?php
-				echo "Your Github Repository with Github Actions has been successfully setup";
-				?>
-				</div>
-                <div class="description line-2">
-				<?php
-				$appType = "PHP";
-				echo "Your $appType app is up and running on Azure";
-				?>
-				</div>
-                <div class="next-steps-container">
-                    <div class="next-steps-header">Next up</div>
-                    <div class="next-steps-body">
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/cloneWhite.svg" alt="cloneWhite" >
-                            </div>
-                            <div class="step-text"><a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">Clone your code repository and start developing your application on IDE of your choice</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/deployWhite.svg" alt="deployWhite">
-                            </div>
-                            <div class="step-text"><a href="https://docs.github.com/en/actions">View your CI/CD pipeline on Github and customize it as per your needs</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/stackWhite.svg" alt="stackWhite">
-                            </div>
-                            <div class="step-text"><a href="http://portal.azure.com">View your service stack in the Azure Portal</a></div>
-                        </div>
-                        <div class="step">
-                            <div class="step-icon">
-                                <img src="img/lightbulbWhite.svg" alt="lightbulbWhite">
-                            </div>
-                            <div class="step-text"><a href="https://docs.github.com">Learn more about all you can do with Github by visiting the documentation</a></div>
-                        </div>
+    </nav>
+</header>
+
+<!--========== MAIN ==========-->
+<main class='main'>
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            <!--========== SECRET 1 ==========-->
+            <section class="islands swiper-slide">
+                <img src="assets/img/background_1.svg" alt="" class="islands__bg">
+
+                <div class="islands__container bd-container">
+                    <div class="islands__data">
+                        <h2 class="islands__subtitle">Secretos</h2>
+                        <h1 class="islands__title">Seguridad</h1>
+                        <p class="islands__description">Darkdoor es el mejor lugar para guardar tus secretos, estarán en un lugar seguro con nosotros.😎</p>
+                        <a href="#" class="islands__button">Comenzar <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                     </div>
+
+
                 </div>
-            </div>
+            </section>
+
+            <!--========== SECRET 2 ==========-->
+            <section class="islands swiper-slide">
+                <img src="assets/img/background_2.svg" alt="" class="islands__bg">
+
+                <div class="islands__container bd-container">
+                    <div class="islands__data">
+                        <h2 class="islands__subtitle">Secretos</h2>
+                        <h1 class="islands__title">Rápido</h1>
+                        <p class="islands__description">Accede a tus secretos de una forma rápida, siempre a tu alcance.</p>
+                        <a href="#" class="islands__button">Comenzar <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
     </div>
+
+    <!--========== CONTROLS ==========-->
+    <div class="controls gallery-thumbs">
+        <div class="controls__container swiper-wrapper">
+            <img src="assets/img/1.svg" alt="" class="controls__img swiper-slide">
+            <img src="assets/img/2.svg" alt="" class="controls__img swiper-slide">
+        </div>
+    </div>
+</main>
+
+<!--========== GSAP ==========-->
+<script src="assets/js/gsap.min.js"></script>
+
+<!--========== SWIPER JS ==========-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--========== MAIN JS ==========-->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
