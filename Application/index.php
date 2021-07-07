@@ -1,17 +1,3 @@
-<?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "darkdoor_db";
-
-$con = mysqli_connect($host, $user, $pass, $db);
-if($con){
-    echo "NITIDOOOO";
-}
-else{
-    echo "BOBITOS MIOP";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
