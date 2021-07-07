@@ -1,3 +1,17 @@
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "darkdoor_db";
+
+$con = mysqli_connect($host, $user, $pass, $db);
+if($con){
+    echo "NITIDOOOO";
+}
+else{
+    echo "BOBITOS MIOP";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +22,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!--========== SWIPER CSS ==========-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/Index/css/swiper-bundle.min.css">
 
     <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/Index/css/styles.css">
 
-    <title>Responsive Landing Page Islands</title>
+    <title>Bienvenido a Darkdoor</title>
 </head>
 <body>
 <!--========== HEADER ==========-->
 <header class="header">
     <nav class="nav bd-container">
-        <a href="#" class="nav__logo"><img src="assets/img/logo.svg" alt=""></a>
+        <a href="#" class="nav__logo"><img src="assets/Index/img/logo.svg" alt=""></a>
 
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#" class="nav__link">Inicio</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Precios</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Sobre Nosotros</a></li>
-                <li class="nav__item"><a href="#" class="nav__button">Acceder</a></li>
+                <li class="nav__item"><a href="Views/Login/Login.php" class="nav__button">Acceder</a></li>
 
             </ul>
         </div>
@@ -43,7 +57,7 @@
         <div class="swiper-wrapper">
             <!--========== SECRET 1 ==========-->
             <section class="islands swiper-slide">
-                <img src="assets/img/background_1.svg" alt="" class="islands__bg">
+                <img src="assets/Index/img/background_1.svg" alt="" class="islands__bg">
 
                 <div class="islands__container bd-container">
                     <div class="islands__data">
@@ -59,7 +73,7 @@
 
             <!--========== SECRET 2 ==========-->
             <section class="islands swiper-slide">
-                <img src="assets/img/background_2.svg" alt="" class="islands__bg">
+                <img src="assets/Index/img/background_2.svg" alt="" class="islands__bg">
 
                 <div class="islands__container bd-container">
                     <div class="islands__data">
@@ -78,19 +92,19 @@
     <!--========== CONTROLS ==========-->
     <div class="controls gallery-thumbs">
         <div class="controls__container swiper-wrapper">
-            <img src="assets/img/1.svg" alt="" class="controls__img swiper-slide">
-            <img src="assets/img/2.svg" alt="" class="controls__img swiper-slide">
+            <img src="assets/Index/img/1.svg" alt="" class="controls__img swiper-slide">
+            <img src="assets/Index/img/2.svg" alt="" class="controls__img swiper-slide">
         </div>
     </div>
 </main>
 
 <!--========== GSAP ==========-->
-<script src="assets/js/gsap.min.js"></script>
+<script src="assets/Index/js/gsap.min.js"></script>
 
 <!--========== SWIPER JS ==========-->
-<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/Index/js/swiper-bundle.min.js"></script>
 
 <!--========== MAIN JS ==========-->
-<script src="assets/js/main.js"></script>
+<script src="assets/Index/js/main.js"></script>
 </body>
 </html>
