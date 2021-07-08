@@ -1,10 +1,19 @@
 <?php
-$conn = mysqli_connect(
+$con = mysqli_connect(
     'localhost',
-    'amc-user',
-    'ale123',
+    'root',
+    '',
     'darkdoor_db'
 );
+
+/*
+if($con){
+    echo "NITIDOOOO";
+}
+else{
+    echo "BOBITOS MIOP";
+}
+*/
 
 ?>
 
