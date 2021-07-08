@@ -27,22 +27,22 @@
         </div>
 
         <div class="login__forms">
-            <form action="" class="login__registre" id="login-in">
+            <form action="ProcessLogin.php" class="login__registre" id="login-in" method="POST">
                 <h1 class="login__title">Iniciar Sesión</h1>
 
                 <div class="login__box">
                     <i class='bx bx-at login__icon'></i>
-                    <input type="text" placeholder="Correo electrónico" class="login__input">
+                    <input type="text" name="email" placeholder="Correo electrónico" class="login__input">
                 </div>
 
                 <div class="login__box">
                     <i class='bx bx-lock-alt login__icon'></i>
-                    <input type="password" placeholder="Contraseña" class="login__input">
+                    <input type="password" name="pass" placeholder="Contraseña" class="login__input">
                 </div>
 
                 <a href="#" class="login__forgot">Olvidaste tu contraseña?</a>
 
-                <a href="#" class="login__button">Acceder</a>
+                <button class="login__button" type="submit" >Acceder</button>
 
                 <div>
                     <span class="login__account">Aun no tienes cuenta ?</span>
@@ -50,25 +50,25 @@
                 </div>
             </form>
 
-            <form action="" class="login__create none" id="login-up">
+            <form action="ProcessRegistration.php" class="login__create none" id="login-up" method="POST">
                 <h1 class="login__title">Crear una cuenta</h1>
 
                 <div class="login__box">
                     <i class='bx bx-user login__icon'></i>
-                    <input type="text" placeholder="Nombre" class="login__input">
+                    <input type="text" name="NAME" placeholder="Nombre" class="login__input">
                 </div>
 
                 <div class="login__box">
                     <i class='bx bx-at login__icon'></i>
-                    <input type="text" placeholder="Correo electrónico" class="login__input">
+                    <input type="text" name="EMAIL" placeholder="Correo electrónico" class="login__input">
                 </div>
 
                 <div class="login__box">
                     <i class='bx bx-lock-alt login__icon'></i>
-                    <input type="password" placeholder="Contraseña" class="login__input">
+                    <input type="password" name="PASS" placeholder="Contraseña" class="login__input">
                 </div>
 
-                <a href="#" class="login__button">Crear cuenta</a>
+                <button type="submit" class="login__button">Crear cuenta</button>
 
                 <div>
                     <span class="login__account">Ya tienes cuenta ?</span>
